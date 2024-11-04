@@ -4,7 +4,7 @@ package querymocks
 
 import (
 	context "context"
-	query "user-service/kit/query"
+	query "github.com/jperdior/recordari-kit/query"
 
 	mock "github.com/stretchr/testify/mock"
 )

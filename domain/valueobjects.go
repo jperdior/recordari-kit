@@ -3,9 +3,10 @@ package domain
 import (
 	"database/sql/driver"
 	"fmt"
-	"github.com/google/uuid"
 	"regexp"
-	"user-service/kit"
+
+	"github.com/google/uuid"
+	kit "github.com/jperdior/recordari-kit"
 )
 
 // EmailValueObject represents a value object for emails

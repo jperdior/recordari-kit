@@ -1,9 +1,10 @@
 package persistence
 
 import (
-	"gorm.io/gorm"
 	"time"
-	"user-service/kit/domain"
+
+	"github.com/jperdior/recordari-kit/domain"
+	"gorm.io/gorm"
 )
 
 type Base struct {

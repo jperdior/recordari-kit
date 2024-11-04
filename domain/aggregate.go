@@ -1,8 +1,6 @@
 package domain
 
-import (
-	"user-service/kit/event"
-)
+import "github.com/jperdior/recordari-kit/event"
 
 type BaseAggregate struct {
 	events []event.Event
