@@ -1,4 +1,4 @@
-package model
+package presentation
 
 // PaginationDTO represents the pagination metadata and the results
 type PaginationDTO struct {

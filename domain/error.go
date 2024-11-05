@@ -1,4 +1,4 @@
-package kit
+package domain
 
 import (
 	"fmt"
