@@ -2,10 +2,13 @@ package domain
 
 import (
 	"github.com/jperdior/recordari-kit/application/event"
+	"time"
 )
 
 type BaseAggregate struct {
-	events []event.Event
+	events    []event.Event
+	CreatedAt time.Time
+	UpdatedAt time.Time
 }
 
 func (a *BaseAggregate) PullEvents() []event.Event {
