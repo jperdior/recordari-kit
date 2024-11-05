@@ -4,14 +4,20 @@ import (
 	"github.com/jperdior/recordari-kit/application/event"
 )
 
-//TODO: find a way to have this in a shared package
-
 const UserRegisteredType event.Type = "user_registered"
 
 type UserRegisteredEvent struct {
 	event.BaseEvent
 	email string
 	roles []string
+}
+
+func NewUserRegisteredEvent(id string, email string, roles []string) UserRegisteredEvent {
+	return UserRegisteredEvent{
+		BaseEvent: event.NewBaseEvent(id),
+		email:     email,
+		roles:     roles,
+	}
 }
 
 func (e UserRegisteredEvent) Email() string {
